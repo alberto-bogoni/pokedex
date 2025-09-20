@@ -15,6 +15,9 @@ public class PokemonMapper {
         String description = "ND";
         if (response.getFlavorTextEntries() != null && !response.getFlavorTextEntries().isEmpty()) {
             description = response.getFlavorTextEntries().get(0).getFlavorText();
+            description = description
+                    .replace("\n", " ")
+                    .replace("\f", " ");
         }
 
         String habitat = response.getHabitat() != null ? response.getHabitat().getName() : "ND";
