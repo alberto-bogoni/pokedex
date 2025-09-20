@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: pokedex
+
+server:
+  port: 9000
+
+external-service:
+  poke-api-base-url: "https://pokeapi.co/api/v2/"
+  fun-translation-base-url: "https://api.funtranslations.com/translate/"
