@@ -1,7 +1,7 @@
 # Pokedex Application
 
 ## Prerequisites
-- Install Java -> https://www.oracle.com/java/technologies/downloads/#jdk21-windows
+- Install Java (JDK 21) -> https://www.oracle.com/java/technologies/downloads/#jdk21-windows
 - Install Maven -> https://maven.apache.org/install.html
 
 ## How to Run
@@ -13,7 +13,7 @@
 ## Endpoints
 
 ### Get Pokemon Information
-curl --location 'http://localhost:9000/pokemon/{pokemonName}'
+curl --location http://localhost:9000/pokemon/{pokemonName}
 
 Response:
 ```json
@@ -26,7 +26,7 @@ Response:
 ```
 
 ### Get translated Pokemon Description
-curl --location 'http://localhost:9000/pokemon/translated/{pokemonName}'
+curl --location http://localhost:9000/pokemon/translated/{pokemonName}
 
 Response:
 ```json
