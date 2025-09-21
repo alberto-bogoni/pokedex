@@ -43,3 +43,4 @@ Response:
 2. Better exception handling.
 3. OAuth authentication.
 4. Increase unit tests cases.
+5. Monitoring (logs, metrics).
